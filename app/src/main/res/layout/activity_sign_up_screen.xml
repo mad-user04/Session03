@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    tools:context=".SignUpScreen">
+
+    <ImageView
+        android:id="@+id/sign_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/sign_logo" />
+
+    <ImageView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/world_text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sign_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textColorHint="#AFAFAF"
+        android:hint="Имя"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/sign_text"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sign_surname"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:hint="Фамилия"
+        android:layout_height="wrap_content"
+        android:textColorHint="#AFAFAF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/sign_name"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sign_mail"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:hint="E-mail"
+        android:layout_height="wrap_content"
+        android:textColorHint="#AFAFAF"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/sign_surname"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sign_password"
+        android:layout_marginTop="16dp"
+        android:hint="Пароль"
+        android:layout_width="match_parent"
+        android:textColorHint="#AFAFAF"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/sign_mail"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password_rep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_password"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Повторите Пароль"
+        android:textColorHint="#AFAFAF" />
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/password_rep"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#EF3A01"
+        android:text="Зарегистрироваться" />
+
+    <Button
+        android:id="@+id/back_to_login"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="У меня уже есть аккаунт"
+        android:textColor="#EF3A01"
+        android:background="alfa"
+        android:backgroundTint="#A8A8A8"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_below="@+id/signin_button"/>
+
+</RelativeLayout>

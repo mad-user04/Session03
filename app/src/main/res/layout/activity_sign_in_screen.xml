@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    tools:context=".SignInScreen">
+
+    <ImageView
+        android:id="@+id/sign_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/sign_logo" />
+
+    <ImageView
+        android:id="@+id/sign_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/world_text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:hint="E-mail"
+        android:textColorHint="#A8A8A8" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/password_ti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_ti"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Пароль"
+        android:textColorHint="#A8A8A8" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sign_text"
+        android:backgroundTint="#EF3A01"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="16dp"
+        android:text="Войти"/>
+
+
+    <Button
+        android:id="@+id/button_sign"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/button_login"
+        android:layout_marginStart="16dp"
+        android:background="alfa"
+        android:backgroundTint="#A8A8A8"
+        android:textColor="#EF3A01"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Регистрация" />
+
+
+</RelativeLayout>
