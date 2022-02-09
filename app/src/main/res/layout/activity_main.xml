@@ -6,9 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="#332973">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_iv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="88dp"
+            android:src="@drawable/main_tv"/>
+
+        <ImageView
+            android:id="@+id/main_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_iv" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смотреть"
+            android:backgroundTint="#EF3A01"
+            android:layout_marginTop="293dp"
+            android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/main_menu"
+        app:itemTextColor="#757575"
+        app:backgroundTint="#1C1A19"
+        android:layout_alignParentBottom="true"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menu_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menu_center"
+        app:itemTextColor="#EF3A01"
+        app:backgroundTint="#332973"
+        android:layout_below="@id/main_tv"
+        android:layout_centerHorizontal="true"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
 
 
+        <TextView
+            android:id="@+id/you_watch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы смотрели"
+            android:textSize="24sp"
+            android:layout_marginStart="16dp"
+            android:layout_below="@+id/menu_center"
+            android:layout_marginTop="187dp"
+            android:textColor="#EF3A01"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/carbon"
+            android:layout_below="@+id/you_watch"
+            android:layout_marginTop="17dp"/>
 
+    </RelativeLayout>
 
 </RelativeLayout>

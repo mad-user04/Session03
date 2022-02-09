@@ -1,7 +1,8 @@
-package com.example.worldcinema
+package com.example.worldcinema.Screen
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.worldcinema.R
 import kotlinx.android.synthetic.main.activity_sign_in_screen.*
 
 class SignInScreen : AppCompatActivity() {

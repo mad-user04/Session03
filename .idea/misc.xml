@@ -5,10 +5,15 @@
       <map>
         <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/drawable/rectangle.xml" value="0.1475" />
         <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_launch_screen.xml" value="0.18" />
-        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_main.xml" value="0.14814814814814814" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_movie_screen.xml" value="0.22" />
         <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_sign_in.xml" value="0.1037037037037037" />
         <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_sign_in_screen.xml" value="0.22" />
         <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/activity_sign_up_screen.xml" value="0.24444444444444444" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/card_films.xml" value="0.24375" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/layout/card_main.xml" value="0.18" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/menu/main_menu.xml" value="0.25" />
+        <entry key="..\:/Users/admin/WorldCinema/app/src/main/res/menu/menu_center.xml" value="0.24722222222222223" />
       </map>
     </option>
   </component>

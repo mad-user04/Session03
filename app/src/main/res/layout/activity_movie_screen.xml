@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332973"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".Screen.MovieScreen"
+    >
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/title_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="The Magicians"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/age_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/title_movie"
+        android:text="18+"
+        android:textColor="@color/orange"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="55dp"
+        android:layout_toEndOf="@+id/age_movie"
+        android:src="@drawable/chat" />
+
+    <ImageView
+        android:id="@+id/main_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/main_movie"
+        android:background="@drawable/movie_main_dark"
+        android:adjustViewBounds="true"/>
+
+    <Button
+        android:id="@+id/janr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="350dp"
+        android:text="Фэнтэзи"
+        />
+
+    <Button
+        android:id="@+id/janr_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toEndOf="@+id/janr_1"
+        android:text="Приключения" />
+
+    <Button
+        android:id="@+id/janr_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="9dp"
+        android:layout_toEndOf="@+id/janr_2"
+        android:text="США" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/janr_1"
+        android:layout_marginStart="16dp"
+        android:text="Телесериал" />
+
+    <TextView
+        android:id="@+id/movie_watch_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_movie"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Смотреть"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/video_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/movie_watch_tv"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/video_stop" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:src="@drawable/play_button" />
+
+    <TextView
+        android:id="@+id/time_watched"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_stop"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="210dp"
+        android:text="12:44"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/innactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/video_stop"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="218dp"
+        android:layout_toEndOf="@+id/time_watched"
+        android:src="@drawable/innactive" />
+
+    <ImageView
+        android:src="@drawable/active"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/video_stop"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/time_watched"
+        android:layout_marginTop="218dp" />
+
+    <ImageView
+        android:src="@drawable/ellipse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="71dp"
+        android:layout_toEndOf="@+id/time_watched"
+        android:layout_alignTop="@id/video_stop"
+        android:layout_marginTop="216dp" />
+
+    <TextView
+        android:id="@+id/time_to_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_stop"
+        android:layout_marginTop="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/innactive"
+        android:text="45:13"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:src="@drawable/volume_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/video_stop"
+        android:layout_marginTop="215dp"
+        android:layout_toEndOf="@+id/time_to_end"
+        android:layout_marginStart="11dp"/>
+
+    <TextView
+        android:id="@+id/title_movie_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_stop"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Описание"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/movie_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/desc_the_magicians"
+        android:layout_below="@+id/title_movie_desc"
+        android:layout_marginTop="8dp"/>
+
+</ScrollView>
+
+
+
+</RelativeLayout>

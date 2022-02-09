@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/main"
+    app:showAsAction="always"
+    android:icon="@drawable/icon_main"
+
+    android:title="Главное" />
+    <item
+        android:id="@+id/rec"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_rec"
+        android:title="Подборка" />
+    <item
+        android:id="@+id/collect"
+        app:showAsAction="always"
+        android:icon="@drawable/collect"
+        android:title="Главное" />
+    <item
+        android:id="@+id/profile"
+        app:showAsAction="always"
+        android:icon="@drawable/icon_profile"
+        android:title="Главное" />
+
+</menu>

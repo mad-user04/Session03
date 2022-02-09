@@ -8,29 +8,33 @@
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
-        android:label="World cinema"
+        android:label="World Cinema"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.WorldCinema"
         tools:targetApi="31">
         <activity
-            android:name=".SignUpScreen"
-            android:exported="false" />
-        <activity
-            android:name=".SignInScreen"
-            android:exported="false" />
-        <activity
-            android:name=".LaunchScreen"
+            android:name=".Screen.MovieScreen"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Screen.SignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.SignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Screen.LaunchScreen"
             android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

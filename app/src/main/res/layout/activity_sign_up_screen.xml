@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#332973"
-    tools:context=".SignUpScreen">
+    tools:context=".Screen.SignUpScreen">
 
     <ImageView
         android:id="@+id/sign_logo"
@@ -96,8 +96,6 @@
         android:layout_height="44dp"
         android:text="У меня уже есть аккаунт"
         android:textColor="#EF3A01"
-        android:background="alfa"
-        android:backgroundTint="#A8A8A8"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
